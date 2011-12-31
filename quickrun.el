@@ -686,8 +686,8 @@ by quickrun.el. But you can register your own command for some languages")
     lst))
 
 (defconst quicklang/lang-candidates
-  `(("c" . ,(quickrun/add-command-if-windows "cl" '("gcc" "clang")))
-    ("c++" . ,(quickrun/add-command-if-windows "cl" '("g++" "clang++")))
+  `(("c" . ,(quickrun/add-command-if-windows '("cl") '("gcc" "clang")))
+    ("c++" . ,(quickrun/add-command-if-windows '("cl") '("g++" "clang++")))
     ("javascript" . ("node" "v8" "js" "jrunscript" "cscript"))
     ("scheme" . ("gosh"))
     ("markdown" . ("Markdown.pl" "kramdown" "bluecloth" "redcarpet" "pandoc"))
